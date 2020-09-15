@@ -1,27 +1,23 @@
 # Roadmap
 
 ## Library setup
--[ ] Webpack
+-[X] Webpack
     - [x] Install
-    - [ ] Configure
--[ ] Typescript
+    - [X] Configure
+-[X] Typescript
     - [X] Install
-    - [ ] Configure
--[ ] Babel
-    - [X] Install
-    - [ ] Configure
+    - [X] Configure
 -[ ] jest
     - [X] Install
     - [ ] Configure
--[ ] React
+-[X] React
     - [X] Install
-    - [ ] Configure
--[ ] Sass
-    - [ ] ~~Install~~ No code to install, pre-processing handled by Webpack
-    - [ ] Configure
--[ ] eslint
+    - [X] ~~Configure~~ No configuration required.
+-[X] Sass
+    - [X] ~~Install~~ No code to install, pre-processing handled by Webpack
+-[X] eslint
     - [X] Install
-    - [ ] Configure
--[ ] Storybook
+    - [X] Configure
+-[X] Storybook
     - [X] Install
-    - [ ] Configure
+    - [X] Configure
