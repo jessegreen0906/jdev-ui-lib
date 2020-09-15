@@ -1,0 +1,8 @@
+# IDE project files
+*.iml
+.idea
+
+# Dependency locations
+node_modules
+
+# Build outputs
