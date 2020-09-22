@@ -1,0 +1,6 @@
+{
+  "rootDir": "../src/",
+  "transform": {
+    "^.+\\.[jt]sx?$": "babel-jest"
+  }
+}
