@@ -1,0 +1,26 @@
+// Colour palette
+// Theme colours
+$primary-colour:  rgba(41, 51, 57, 1);
+$secondary-color: rgba(14, 111, 195, 1);
+$accent-color: rgba(235, 123, 58, 1);
+
+// Basic colours
+$white-colour: rgba(230, 230, 230, 1);
+$black-colour: rgba(25, 25, 25, 1);
+
+// Component specific mixins
+@mixin button-colours ($base-colour) {
+  background-color: $base-colour;
+  border-top-color: lighten($base-colour, 20%);
+  border-left-color: lighten($base-colour, 20%);
+  border-bottom-color: darken($base-colour, 20%);
+  border-right-color: darken($base-colour, 20%);
+
+  &:active {
+    background-color: darken($base-colour, 10%);
+    border-top-color: darken($base-colour, 20%);
+    border-left-color: darken($base-colour, 20%);
+    border-bottom-color: lighten($base-colour, 20%);
+    border-right-color: lighten($base-colour, 20%);
+  }
+}

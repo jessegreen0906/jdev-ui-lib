@@ -8,17 +8,20 @@
   "scripts": {
     "build-dev": "webpack --config configs/webpack.dev.config.js --verbose",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "unit-test": "jest --no-cache --config configs/jest_config.json"
   },
   "devDependencies": {
     "@babel/core": "^7.11.6",
     "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-controls": "^6.0.21",
     "@storybook/addon-essentials": "^6.0.21",
     "@storybook/addon-links": "^6.0.21",
     "@storybook/react": "^6.0.21",
     "@tsconfig/recommended": "^1.0.1",
     "babel-cli": "6",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.3.0",
     "babel-loader": "^8.1.0",
     "babel-preset-react-app": "3",
     "css-loader": "^4.3.0",
@@ -35,8 +38,11 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.4",
     "eslint-loader": "^4.0.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1"
   }
 }

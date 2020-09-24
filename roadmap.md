@@ -21,3 +21,7 @@
 -[X] Storybook
     - [X] Install
     - [X] Configure
+    
+## Chores
+- [ ] Move babel.config.json to configs file
+    - It's needed for Jest, which doesn't seem to have an option for the babel config file location.

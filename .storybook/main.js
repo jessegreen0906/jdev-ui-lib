@@ -1,12 +1,12 @@
 module.exports = {
   "stories": [
-    "../src/**/*.stories.mdx",
-    "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    "../src/components/**/*.stories.tsx"
   ],
   "addons": [
     "@storybook/addon-links",
-    "@storybook/addon-essentials"
-  ]
+    "@storybook/addon-essentials",
+    "@storybook/addon-controls"
+  ],
   // Custom webpack config for storybook
   webpackFinal: async (config, {configType}) => {
     config.module.rules.push({

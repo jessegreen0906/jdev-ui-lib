@@ -1,0 +1,50 @@
+@import "/src/theme/bottletop/variables";
+
+@mixin heading-sizing($size) {
+  font-size: $size;
+  margin: $size*0.75 $size*0.5;
+}
+
+.jdev-heading {
+  font-family: $accent-font-family;
+}
+
+h1.jdev-heading,
+p.pseudo-heading1 {
+  @include heading-sizing($font-size-extra-large);
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
+h2.jdev-heading,
+p.pseudo-heading2 {
+  @include heading-sizing($font-size-large);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+h3.jdev-heading,
+p.pseudo-heading3 {
+  @include heading-sizing($font-size-standard);
+  font-weight: bold;
+  text-decoration: underline;
+}
+h4.jdev-heading,
+p.pseudo-heading4 {
+  @include heading-sizing($font-size-standard);
+  font-weight: normal;
+  text-decoration: underline;
+}
+h5.jdev-heading,
+p.pseudo-heading5 {
+  @include heading-sizing($font-size-standard);
+  font-weight: bold;
+  text-decoration: none;
+}
+h6.jdev-heading,
+p.pseudo-heading6 {
+  @include heading-sizing($font-size-standard);
+  font-style: italic;
+  font-weight: normal;
+  font-decoration: none;
+}
