@@ -1,0 +1,17 @@
+@import "/src/theme/bottletop/variables";
+
+.jdev-link {
+  color: $secondary-color;
+  text-decoration: none;
+  border-bottom: solid 1px $secondary-color;
+
+  &:hover,
+  &:focus {
+	border-bottom-color: transparent;
+  }
+
+  &:visited {
+    color: $accent-color;
+    border-bottom-color: $accent-color;
+  }
+}

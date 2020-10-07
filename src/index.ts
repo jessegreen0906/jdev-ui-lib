@@ -1,8 +1,5 @@
-let msg:string = "Hello world";
+import {BasicTemplate} from "./pageTemplates/Basic/Basic";
 
-let thisFunction:Function = (msg:string) => {
-    console.log(msg);
-    return;
+module.exports = {
+	BasicTemplate: BasicTemplate
 }
-
-thisFunction(msg);

@@ -3,7 +3,7 @@ import './Button.scss';
 
 export interface ButtonProps {
     text: string
-    action?: Function
+    action?: React.MouseEventHandler
     variant?: string
 }
 

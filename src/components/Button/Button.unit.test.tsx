@@ -7,10 +7,6 @@ import Adapter from 'enzyme-adapter-react-16';
 configure({adapter: new Adapter()});
 
 describe('Button unit tests', () => {
-   it('should render by default now', () => {
-      const button = shallow(<Button />);
-   });
-   
    it('should render with custom text', () => {
       const Text = 'Test text';
       const button = shallow(<Button text={Text} />);

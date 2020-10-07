@@ -12,7 +12,7 @@ export default {
     }
 } as Meta;
 
-const Template: Story<{}> = (args) => <Heading {...args} />;
+const Template: Story<HeadingProps> = (args) => <Heading {...args} />;
 
 export const H1 = Template.bind({});
 H1.args = {

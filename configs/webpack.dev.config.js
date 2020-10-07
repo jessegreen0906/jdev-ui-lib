@@ -40,10 +40,12 @@ module.exports = {
         ]
     },
     resolve: {
-        extensions: ['.tsx', '.ts']
+        extensions: ['.js','.tsx', '.ts']
     },
     output: {
         filename: 'jdev-ui-lib.js',
-        path: path.resolve(rootPath, 'dist')
+        path: path.resolve(rootPath, 'dist'),
+        // Exposes the library as a global variable.
+        library: 'jdevUi'
     }
 }

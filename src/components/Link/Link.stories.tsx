@@ -2,26 +2,21 @@ import React from 'react';
 // also exported from '@storybook/react' if you can deal with breaking changes in 6.1
 import { Story, Meta } from '@storybook/react/types-6-0';
 
-import {Button, ButtonProps} from './Button';
+import {Link, LinkProps} from './Link';
 
 export default {
-    title: 'Components/Button',
-    component: Button,
+    title: 'Components/Link',
+    component: Link,
     argTypes: {
         text: {control:'text'}
     }
 } as Meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const Template: Story<LinkProps> = (args) => <Link {...args} />;
 
 export const Standard = Template.bind({});
 Standard.args = {
-    text: 'Button text'
+    text: 'Link text'
 };
 
-export const Alternate = Template.bind({});
-Alternate.args = {
-    text: 'Alternate button',
-    variant: 'alternate'
-}
 

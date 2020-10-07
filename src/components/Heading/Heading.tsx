@@ -1,4 +1,4 @@
-import React, {FunctionComponent} from "react";
+import React, {FunctionComponent, ReactElement} from "react";
 import './Heading.scss';
 
 export interface HeadingProps {
@@ -9,7 +9,7 @@ export interface HeadingProps {
 
 
 export const Heading:React.FunctionComponent<HeadingProps> = (props) => {
-    let markup;
+    let markup: ReactElement;
     if(props.pseudoHeading) {
         markup = <p className={"jdev-heading pseudo-heading"+props.level}>{props.text}</p>;
     } else {
@@ -40,6 +40,7 @@ export const Heading:React.FunctionComponent<HeadingProps> = (props) => {
                 break;
             }
             default: {
+                markup = <div></div>
                 console.error('Heading component failed to render');
                 break;
             }
