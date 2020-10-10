@@ -1,0 +1,29 @@
+@import "src/theme/bottletop/variables";
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+
+  font-family: $base-font-family;
+  font-size: $phone-font-size;
+  
+  @media screen and (min-width: $lg-width) {
+    font-size: $desktop-font-size;
+  }
+}
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.content-box {
+  width: $content-box-width;
+  margin: auto;
+}
+

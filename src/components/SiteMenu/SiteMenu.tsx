@@ -1,5 +1,5 @@
 import React, {FunctionComponent} from "react";
-import './SiteMenu.scss';
+import "./SiteMenu.scss";
 import {Link} from "../Link/Link";
 
 export interface SiteMenuProps {
@@ -11,7 +11,7 @@ export const SiteMenu:React.FunctionComponent<SiteMenuProps> = (props) => {
 	
 	return (
 		<div className={"jdev-site-menu "+props.variant}>
-			<nav>
+			<nav className={"content-box"}>
 				<ul>
 					<li><Link text={"Home"} location={"/home"} /> </li>
 					<li className={"current-location1"}><Link text={"Services"} location={"/services"} /> </li>

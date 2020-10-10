@@ -1,9 +1,9 @@
 import React, {FunctionComponent, ReactElement} from "react";
-import './Heading.scss';
+import "./Heading.scss";
 
 export interface HeadingProps {
-    text: string
-    level?: number
+    text: string,
+    level?: number,
     pseudoHeading?: boolean
 }
 
@@ -41,7 +41,7 @@ export const Heading:React.FunctionComponent<HeadingProps> = (props) => {
             }
             default: {
                 markup = <div></div>
-                console.error('Heading component failed to render');
+                console.error("Heading component failed to render");
                 break;
             }
         }

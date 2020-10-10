@@ -1,4 +1,5 @@
 import React, {PropsWithChildren} from "react";
+import "./PageTemplate.scss";
 
 export interface PageTemplateInterface {
 	pageData: JSON
@@ -6,6 +7,8 @@ export interface PageTemplateInterface {
 
 export const PageTemplate:React.FunctionComponent<PageTemplateInterface> = (props:PropsWithChildren<PageTemplateInterface>) => {
 	return (
-		<span>Empty page template</span>
+		<div id={"page-container"}>
+			{props.children}
+		</div>
 	)
 };

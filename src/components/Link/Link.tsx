@@ -1,9 +1,9 @@
 import React, {FunctionComponent} from "react";
-import './Link.scss';
+import "./Link.scss";
 
 export interface LinkProps {
-    text: string
-    location?: string
+    text: string,
+    location?: string,
     variant?: string
 }
 
@@ -11,11 +11,11 @@ export interface LinkProps {
 export const Link:React.FunctionComponent<LinkProps> = (props) => {
     
     return (
-        <a className={'jdev-link '+props.variant} href={props.location}>{props.text}</a>
+        <a className={"jdev-link "+props.variant} href={props.location}>{props.text}</a>
     );
 }
 
 Link.defaultProps = {
-    location: '#',
-    variant: 'standard'
+    location: "#",
+    variant: "standard"
 }

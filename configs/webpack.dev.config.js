@@ -46,6 +46,6 @@ module.exports = {
         filename: 'jdev-ui-lib.js',
         path: path.resolve(rootPath, 'dist'),
         // Exposes the library as a global variable.
-        library: 'jdevUi'
+        library: 'JdevUi'
     }
 }

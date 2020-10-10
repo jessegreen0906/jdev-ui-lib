@@ -1,0 +1,17 @@
+@import "../../theme/bottletop/variables";
+@import "../PageTemplate/PageTemplate";
+
+#root {
+  height: 100%;
+
+  &.theme-bottletop {
+    #page-container {
+      background: lighten($primary-colour, 30%);
+    }
+
+    main {
+      background: transparentize($white-colour, 0.2);
+      flex-grow: 1;
+    }
+  }
+}
