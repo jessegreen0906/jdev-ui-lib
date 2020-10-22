@@ -1,12 +1,12 @@
-import React from "react";
-import {PageTemplate, PageTemplateInterface} from "../PageTemplate/PageTemplate";
+import React from "react"; import {PageTemplate, PageTemplateInterface, renderContent, ContentNode} from "../PageTemplate/PageTemplate";
 import {Heading} from "../../components/Heading/Heading";
 import {SiteMenu} from "../../components/SiteMenu/SiteMenu";
 import "./Basic.scss";
 import {Footer} from "../../components/Footer/Footer";
 
+
 export interface BasicTemplateProperties extends PageTemplateInterface {
-	pageData:JSON
+	pageData: Array<ContentNode>;
 }
 
 export const BasicTemplate:React.FunctionComponent<BasicTemplateProperties> = (props) => {
@@ -14,33 +14,14 @@ export const BasicTemplate:React.FunctionComponent<BasicTemplateProperties> = (p
 		<PageTemplate pageData={props.pageData}>
 			<SiteMenu />
 			<main className={"content-box"}>
-				<Heading text={"Page Title"} />
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
-				<p>Lorem ipsum</p>
+			{
+				props.pageData.map((obj) => {
+					renderContent(obj);
+				})
+				// for (let obj in props.pageData) {
+				// 	renderContent(obj);
+				// }
+			}
 			</main>
 			<Footer />
 		</PageTemplate>

@@ -1,7 +1,7 @@
-import React, {FunctionComponent, ReactElement} from "react";
+import React, {FunctionComponent, Props, PropsWithChildren, ReactElement} from "react";
 import "./Heading.scss";
 
-export interface HeadingProps {
+export interface HeadingProps extends PropsWithChildren<any>{
     text: string,
     level?: number,
     pseudoHeading?: boolean
