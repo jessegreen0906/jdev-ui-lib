@@ -28,13 +28,14 @@
     - [ ] Heading
     - [ ] Link
     - [ ] SiteMenu    
+    - [ ] Label
 ## Chores
 - [ ] Move babel.config.json to configs file
     - It's needed for Jest, which doesn't seem to have an option for the babel config file location.
     
 ## Components
 - [ ] Form
-    - [ ] Label
+    - [X] Label
     - [ ] Text input
     - [ ] Submit
     - [ ] Drop down

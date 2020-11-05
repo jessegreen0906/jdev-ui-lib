@@ -99,18 +99,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _nod
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Heading/Heading.scss":
-/*!**************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Heading/Heading.scss ***!
-  \**************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \".jdev-heading {\\n  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;\\n}\\n\\nh1.jdev-heading,\\np.pseudo-heading1 {\\n  font-size: 1.8rem;\\n  margin: 1.35rem 0.9rem;\\n  text-decoration: underline;\\n  font-weight: bolder;\\n}\\n\\nh2.jdev-heading,\\np.pseudo-heading2 {\\n  font-size: 1.2rem;\\n  margin: 0.9rem 0.6rem;\\n  font-weight: bold;\\n  text-decoration: underline;\\n}\\n\\nh3.jdev-heading,\\np.pseudo-heading3 {\\n  font-size: 1rem;\\n  margin: 0.75rem 0.5rem;\\n  font-weight: bold;\\n  text-decoration: underline;\\n}\\n\\nh4.jdev-heading,\\np.pseudo-heading4 {\\n  font-size: 1rem;\\n  margin: 0.75rem 0.5rem;\\n  font-weight: normal;\\n  text-decoration: underline;\\n}\\n\\nh5.jdev-heading,\\np.pseudo-heading5 {\\n  font-size: 1rem;\\n  margin: 0.75rem 0.5rem;\\n  font-weight: bold;\\n  text-decoration: none;\\n}\\n\\nh6.jdev-heading,\\np.pseudo-heading6 {\\n  font-size: 1rem;\\n  margin: 0.75rem 0.5rem;\\n  font-style: italic;\\n  font-weight: normal;\\n  font-decoration: none;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://JdevUi/./src/components/Heading/Heading.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Link/Link.scss":
 /*!********************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Link/Link.scss ***!
@@ -266,29 +254,6 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 
 /***/ }),
 
-/***/ "./src/components/Heading/Heading.scss":
-/*!*********************************************!*\
-  !*** ./src/components/Heading/Heading.scss ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./Heading.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Heading/Heading.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack://JdevUi/./src/components/Heading/Heading.scss?");
-
-/***/ }),
-
-/***/ "./src/components/Heading/Heading.tsx":
-/*!********************************************!*\
-  !*** ./src/components/Heading/Heading.tsx ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Heading = void 0;\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n__webpack_require__(/*! ./Heading.scss */ \"./src/components/Heading/Heading.scss\");\nexports.Heading = (props) => {\n    let markup;\n    if (props.pseudoHeading) {\n        markup = react_1.default.createElement(\"p\", { className: \"jdev-heading pseudo-heading\" + props.level }, props.text);\n    }\n    else {\n        switch (props.level) {\n            case 1: {\n                markup = react_1.default.createElement(\"h1\", { className: \"jdev-heading\" }, props.text);\n                break;\n            }\n            case 2: {\n                markup = react_1.default.createElement(\"h2\", { className: \"jdev-heading\" }, props.text);\n                break;\n            }\n            case 3: {\n                markup = react_1.default.createElement(\"h3\", { className: \"jdev-heading\" }, props.text);\n                break;\n            }\n            case 4: {\n                markup = react_1.default.createElement(\"h4\", { className: \"jdev-heading\" }, props.text);\n                break;\n            }\n            case 5: {\n                markup = react_1.default.createElement(\"h5\", { className: \"jdev-heading\" }, props.text);\n                break;\n            }\n            case 6: {\n                markup = react_1.default.createElement(\"h6\", { className: \"jdev-heading\" }, props.text);\n                break;\n            }\n            default: {\n                markup = react_1.default.createElement(\"div\", null);\n                console.error(\"Heading component failed to render\");\n                break;\n            }\n        }\n    }\n    return (markup);\n};\nexports.Heading.defaultProps = {\n    level: 1,\n    pseudoHeading: false\n};\n\n\n//# sourceURL=webpack://JdevUi/./src/components/Heading/Heading.tsx?");
-
-/***/ }),
-
 /***/ "./src/components/Link/Link.scss":
 /*!***************************************!*\
   !*** ./src/components/Link/Link.scss ***!
@@ -389,7 +354,7 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.renderContent = exports.PageTemplate = void 0;\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n__webpack_require__(/*! ./PageTemplate.scss */ \"./src/pageTemplates/PageTemplate/PageTemplate.scss\");\nconst Heading_1 = __webpack_require__(/*! ../../components/Heading/Heading */ \"./src/components/Heading/Heading.tsx\");\nexports.PageTemplate = (props) => {\n    return (react_1.default.createElement(\"div\", { id: \"page-container\" }, props.children));\n};\n/**\n *\n * @param content\n */\nexports.renderContent = (content) => {\n    const { contentType, props } = content;\n    switch (contentType) {\n        case \"header\":\n            if (typeof props === \"HeadingProps\") {\n                const castProps = props;\n                return react_1.default.createElement(Heading_1.Heading, { props: castProps });\n            }\n            break;\n        default:\n            console.error(\"Page data includes invalid content type: \" + contentType);\n            return react_1.default.createElement(\"div\", null);\n    }\n};\n\n\n//# sourceURL=webpack://JdevUi/./src/pageTemplates/PageTemplate/PageTemplate.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.renderContent = exports.PageTemplate = void 0;\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n__webpack_require__(/*! ./PageTemplate.scss */ \"./src/pageTemplates/PageTemplate/PageTemplate.scss\");\nexports.PageTemplate = (props) => {\n    return (react_1.default.createElement(\"div\", { id: \"page-container\" }, props.children));\n};\n/**\n *\n * @param content\n */\nexports.renderContent = (content) => {\n    const { contentType, props } = content;\n    switch (contentType) {\n        // case \"header\":\n        // \tif (typeof props === \"HeadingProps\") {\n        // \t\tconst castProps:HeadingProps = (props as HeadingProps);\n        // \t\treturn <Heading props={castProps}></Heading>;\n        // \t}\n        // \tbreak;\n        default:\n            console.error(\"Page data includes invalid content type: \" + contentType);\n            return react_1.default.createElement(\"div\", null);\n    }\n};\n\n\n//# sourceURL=webpack://JdevUi/./src/pageTemplates/PageTemplate/PageTemplate.tsx?");
 
 /***/ })
 
