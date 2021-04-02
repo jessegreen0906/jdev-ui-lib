@@ -1,9 +1,9 @@
 import React, {FunctionComponent} from "react";
-import './Button.scss';
+import "./Button.scss";
 
 export interface ButtonProps {
-    text: string
-    action?: React.MouseEventHandler
+    text: string,
+    action?: React.MouseEventHandler,
     variant?: string
 }
 
@@ -11,10 +11,10 @@ export interface ButtonProps {
 export const Button:React.FunctionComponent<ButtonProps> = (props) => {
     
     return (
-        <button className={'jdev-button '+props.variant} onClick={props.action}>{props.text}</button>
+        <button className={"jdev-button "+props.variant} onClick={props.action}>{props.text}</button>
     );
 }
 
 Button.defaultProps = {
-    variant: 'standard'
+    variant: "standard"
 }
