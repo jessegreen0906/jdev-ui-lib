@@ -87,6 +87,18 @@ var JdevUi =
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Button/Button.scss":
+/*!************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Button/Button.scss ***!
+  \************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(false);\n// Module\n___CSS_LOADER_EXPORT___.push([module.i, \".jdev-button {\\n  border: solid transparent 0.2rem;\\n  font-size: 1rem;\\n  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;\\n  padding: 0.25rem 0.5rem;\\n  cursor: pointer;\\n}\\n.jdev-button:hover, .jdev-button:focus {\\n  text-decoration: underline;\\n}\\n.jdev-button.standard {\\n  color: #e6e6e6;\\n  background-color: #0e6fc3;\\n  border-top-color: #45a2f2;\\n  border-left-color: #45a2f2;\\n  border-bottom-color: #073964;\\n  border-right-color: #073964;\\n}\\n.jdev-button.standard:active {\\n  background-color: #0b5493;\\n  border-top-color: #073964;\\n  border-left-color: #073964;\\n  border-bottom-color: #45a2f2;\\n  border-right-color: #45a2f2;\\n}\\n.jdev-button.standard:hover {\\n  background-color: #eb7b3a;\\n  border-top-color: #f4b997;\\n  border-left-color: #f4b997;\\n  border-bottom-color: #ad4b12;\\n  border-right-color: #ad4b12;\\n}\\n.jdev-button.standard:hover:active {\\n  background-color: #dc5f16;\\n  border-top-color: #ad4b12;\\n  border-left-color: #ad4b12;\\n  border-bottom-color: #f4b997;\\n  border-right-color: #f4b997;\\n}\\n.jdev-button.alternate {\\n  color: #0e6fc3;\\n  background-color: #e6e6e6;\\n  border-top-color: white;\\n  border-left-color: white;\\n  border-bottom-color: #b3b3b3;\\n  border-right-color: #b3b3b3;\\n}\\n.jdev-button.alternate:active {\\n  background-color: #cdcdcd;\\n  border-top-color: #b3b3b3;\\n  border-left-color: #b3b3b3;\\n  border-bottom-color: white;\\n  border-right-color: white;\\n}\\n.jdev-button.alternate:hover {\\n  color: #eb7b3a;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ __webpack_exports__[\"default\"] = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://JdevUi/./src/components/Button/Button.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Footer/Footer.scss":
 /*!************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Footer/Footer.scss ***!
@@ -231,6 +243,29 @@ eval("\n\nvar isOldIE = function isOldIE() {\n  var memo;\n  return function mem
 
 /***/ }),
 
+/***/ "./src/components/Button/Button.scss":
+/*!*******************************************!*\
+  !*** ./src/components/Button/Button.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./Button.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/components/Button/Button.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\n\n\nmodule.exports = content.locals || {};\n\n//# sourceURL=webpack://JdevUi/./src/components/Button/Button.scss?");
+
+/***/ }),
+
+/***/ "./src/components/Button/Button.tsx":
+/*!******************************************!*\
+  !*** ./src/components/Button/Button.tsx ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nexports.Button = void 0;\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\n__webpack_require__(/*! ./Button.scss */ \"./src/components/Button/Button.scss\");\nexports.Button = (props) => {\n    return (react_1.default.createElement(\"button\", { className: \"jdev-button \" + props.variant, onClick: props.action }, props.text));\n};\nexports.Button.defaultProps = {\n    variant: \"standard\"\n};\n\n\n//# sourceURL=webpack://JdevUi/./src/components/Button/Button.tsx?");
+
+/***/ }),
+
 /***/ "./src/components/Footer/Footer.scss":
 /*!*******************************************!*\
   !*** ./src/components/Footer/Footer.scss ***!
@@ -308,7 +343,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst Basic_1 = __webpack_require__(/*! ./pageTemplates/Basic/Basic */ \"./src/pageTemplates/Basic/Basic.tsx\");\nmodule.exports = {\n    BasicTemplate: Basic_1.BasicTemplate\n};\n\n\n//# sourceURL=webpack://JdevUi/./src/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst Basic_1 = __webpack_require__(/*! ./pageTemplates/Basic/Basic */ \"./src/pageTemplates/Basic/Basic.tsx\");\nconst Button_1 = __webpack_require__(/*! ./components/Button/Button */ \"./src/components/Button/Button.tsx\");\nmodule.exports = {\n    BasicTemplate: Basic_1.BasicTemplate,\n    Button: Button_1.Button\n};\n\n\n//# sourceURL=webpack://JdevUi/./src/index.ts?");
 
 /***/ }),
 
