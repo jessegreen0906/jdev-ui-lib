@@ -34,7 +34,9 @@ jobs:
         with:
           name: jdev-ui
           path: dist/
-      - run: yarn publish --tag ${{ steps.tag_version.outputs.new_tag }}
+      - run: yarn version ${{ steps.tag_version.outputs.new_tag }}
+      - run: yarn publish
+#      - run: yarn publish --tag ${{ steps.tag_version.outputs.new_tag }}
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
