@@ -34,10 +34,11 @@ jobs:
         with:
           name: jdev-ui
           path: dist/
-      - run: yarn config set version-sign-git-tag false
-      - run: yarn version --new-version ${{ steps.tag_version.outputs.new_tag }}
-      - run: yarn publish
-#      - run: yarn publish --tag ${{ steps.tag_version.outputs.new_tag }}
+
+      - name: Set version
+        run: yarn version --new-version ${{ steps.tag_version.outputs.new_tag }} --no-git-tag-version
+      - name: Publish package
+        run: yarn publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
