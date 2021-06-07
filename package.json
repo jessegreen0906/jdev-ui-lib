@@ -6,7 +6,7 @@
   "author": "Jesse Green <jessegreen0906@gmail.com>",
   "license": "MIT",
   "scripts": {
-	"build": "webpack --config configs/webpack.dev.config.js",
+    "build": "webpack --config configs/webpack.dev.config.js",
     "build-dev": "webpack --config configs/webpack.dev.config.js --verbose",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -48,6 +48,6 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-test-renderer": "^16.13.1",
-	"ts-loader": "^8.0.3"
+    "ts-loader": "^8.0.3"
   }
 }
